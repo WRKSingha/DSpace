@@ -90,7 +90,7 @@ h2 {
   color: #3498db;
 }
 
-.no-search {
+.nav-t {
   transform: translate(0);
   transition: transform 0.7s ease-in-out;
 }
@@ -179,10 +179,10 @@ h2 {
 }
 
 /* about section */
-.about-header{
+.section-header{
   padding-top: 50px;
 }
-.about-header .title{
+.section-header .title{
   position: relative;
   text-align: center;
   color: crimson;
@@ -190,7 +190,7 @@ h2 {
   font-weight: bold;
   font-family: 'Ubuntu', sans-serif;
 }
-.about-header .title::before{
+.section-header .title::before{
   content: "";
   position: absolute;
   bottom: 0px;
@@ -200,7 +200,7 @@ h2 {
   background: #111;
   transform: translateX(-50%);
 }
-.about-header .title::after{
+.section-header .title::after{
   position: absolute;
   bottom: -12px;
   left: 50%;
@@ -211,6 +211,71 @@ h2 {
   transform: translateX(-50%);
 }
 /* !about section */
+/* team section */
+.team{
+  width: 100%;
+  padding: 50px 20px;
+} 
+.team .carousel .card{
+  background: #222;
+  border-radius: 6px;
+  padding-top: 25px 35px;
+  text-align: center;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+.team .carousel .card:hover{
+  background: crimson;
+}
+.team .carousel .card .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.team .carousel .card:hover .box{
+  transform: scale(1.05);
+}
+.team .carousel .card .team-text{
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+.team .carousel .card img{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid crimson;
+  transition: all 0.3s ease;
+}
+.team .carousel .card:hover img{
+  border-color: white;
+}
+.owl-dots{
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-dot{
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none!important;
+  border-radius: 50%;
+  border: 2px solid crimson!important;
+  transition: all 0.3s ease;
+}
+.owl-dot.active{
+  width: 35px;
+  border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+  background: crimson!important;
+}
+/* !team section */
 /* !main section */
 
 /* mobile menu and animation */
@@ -300,12 +365,15 @@ h2 {
     flex-direction: column;
     padding: 50px;
   }
+  .team {
+    padding: 50px;
+  }
   
   /* MOBILE HEADINGS */
   
-  h1 {
+  /* h1 {
     font-size: 1.9rem;
-  }
+  } */
   
   h2 {
     font-size: 1rem;
@@ -314,6 +382,10 @@ h2 {
   p {
     font-size: 0.8rem;
   }
+
+  /* .title {
+    font-size: 1rem;
+  } */
   
   /* MOBILE NAVIGATION */
      
