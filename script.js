@@ -3,6 +3,10 @@ $('.menu-toggle').click(function(){
    $(".nav").toggleClass("mobile-nav");
    $(this).toggleClass("is-active");
 });
+$('.nav a').click(function () {
+  $(".menu-toggle").toggleClass("is-active");
+  $(".nav").toggleClass("mobile-nav");
+});
 
 // main_text animation
 (function () {
