@@ -5,10 +5,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DSpace</title>
+  <title>DSCSpace</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+  <!-- fontawesome css -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
     integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <!-- OwlCarousel2 css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- OwlCarousel2 css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- custom css -->
   <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -25,7 +35,7 @@
           <span class="bar"></span>
           <span class="bar"></span>
         </div>
-        <ul class="nav no-search">
+        <ul class="nav nav-t">
           <li class="nav-item"><a href="#">Home</a></li>
           <li class="nav-item"><a href="#about">About</a></li>
           <li class="nav-item"><a href="#">Team</a></li>
@@ -46,7 +56,7 @@
       </div>
     </section>
     <!-- =========================== about section =========================== -->
-    <div class="about-header" id="about">
+    <div class="section-header" id="about">
       <h2 class="title">About Us</h2>
     </div>
     <section class="about">
@@ -72,6 +82,43 @@
       </div>
     </section>
     <!-- =========================== !about section =========================== -->
+    <!-- =========================== team section =========================== -->
+    <div class="section-header" id="team">
+      <h2 class="title">Our Team</h2>
+    </div>
+    <section class="team">
+      <div class="carousel owl-carousel">
+        <div class="card">
+          <div class="box">
+            <img src="./assets/banner-2.jpg" alt="person1">
+            <div class="team-text">Someone's name</div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img src="./assets/banner-3.jpg" alt="person2">
+            <div class="team-text">Someone's name</div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img src="./assets/banner-4.jpg" alt="person3">
+            <div class="team-text">Someone's name</div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img src="./assets/banner-5.jpg" alt="person4">
+            <div class="team-text">Someone's name</div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================== !team section =========================== -->
     <!-- =========================== !main section =========================== -->
 
 
@@ -79,11 +126,17 @@
     <!-- =========================== !footer section =========================== -->
   </div>
 
-  <!-- partial -->
   <!-- jquery js -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
+  <!-- waypoints js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+    integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- OwlCarousel2 js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- custom js -->
   <script src="./script.js"></script>
 
