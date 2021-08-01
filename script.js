@@ -1,8 +1,9 @@
 //nav-bar
-$('.menu-toggle').click(function(){
-   $(".nav").toggleClass("mobile-nav");
-   $(this).toggleClass("is-active");
+$('.menu-toggle').click(function () {
+  $(".nav").toggleClass("mobile-nav");
+  $(this).toggleClass("is-active");
 });
+
 $('.nav a').click(function () {
   $(".menu-toggle").toggleClass("is-active");
   $(".nav").toggleClass("mobile-nav");
@@ -35,3 +36,27 @@ $('.nav a').click(function () {
     }
   };
 }.call(this));
+
+// owl carousel
+$(document).ready(function(){
+  $('.carousel').owlCarousel({
+    margin: 20,
+    loop: true,
+    autoplayTimeOut: 2000,
+    autoplayHoverPause: true,
+    responsive: {
+      0:{
+        items: 1,
+        nav: false,
+      },
+      600:{
+        items: 2,
+        nav: false,
+      },
+      1000:{
+        items: 3,
+        nav: false,
+      }
+    }
+  });
+});
