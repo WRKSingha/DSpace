@@ -179,7 +179,7 @@ h2 {
 }
 
 /* about section */
-.section-header{
+.section-header#about{
   padding-top: 50px;
 }
 .section-header .title{
@@ -212,6 +212,9 @@ h2 {
 }
 /* !about section */
 /* team section */
+.section-header#team{
+  padding-top: 10px;
+}
 .team{
   width: 100%;
   padding: 50px 20px;
@@ -363,17 +366,13 @@ h2 {
 @media only screen and (max-width: 720px) { 
   .about {
     flex-direction: column;
-    padding: 50px;
+    padding: 0px 50px;
   }
   .team {
-    padding: 50px;
+    padding: 20px 50px;
   }
   
   /* MOBILE HEADINGS */
-  
-  /* h1 {
-    font-size: 1.9rem;
-  } */
   
   h2 {
     font-size: 1rem;
@@ -382,10 +381,6 @@ h2 {
   p {
     font-size: 0.8rem;
   }
-
-  /* .title {
-    font-size: 1rem;
-  } */
   
   /* MOBILE NAVIGATION */
      
